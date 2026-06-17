@@ -6,18 +6,66 @@
 <title>Agrinho 2026 - Otávio</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Cuidando das Plantas 🌱</h1>
+<header>
+  <h1>🌱 Cuidando das Plantas</h1>
+  <p>Aprenda como cuidar melhor das plantas na escola e em casa!</p>
+</header>
 
-<p>
-As plantas são muito importantes para a escola e para a vida.
-Vamos aprender a cuidar delas!
-</p>
+<section class="card">
+  <h2>🌿 Por que as plantas são importantes?</h2>
+  <ul>
+    <li>Produzem oxigênio</li>
+    <li>Deixam o ambiente mais bonito</li>
+    <li>Ajudam a refrescar o ar</li>
+    <li>São importantes para os animais</li>
+  </ul>
+</section>
 
-<button onclick="mostrarDicas()">Ver Dicas</button>
+<section class="card">
+  <h2>💧 Dicas de cuidado</h2>
+  <p id="dicas" style="display:none;">
+    • Regue com frequência, mas sem encharcar<br>
+    • Coloque a planta em local com luz solar<br>
+    • Retire folhas secas<br>
+    • Use terra rica em nutrientes
+  </p>
+
+  <button onclick="mostrarDicas()">Ver / Ocultar Dicas</button>
+</section>
+
+<section class="card">
+  <h2>❓ Quiz: Você sabe cuidar de plantas?</h2>
+
+  <div class="quiz">
+    <p>1. Qual a função da água para a planta?</p>
+    <button onclick="responder(true)">Hidratar a planta</button>
+    <button onclick="responder(false)">Fazer barulho</button>
+  </div>
+
+  <div class="quiz">
+    <p>2. As plantas precisam de luz?</p>
+    <button onclick="responder(true)">Sim</button>
+    <button onclick="responder(false)">Não</button>
+  </div>
+
+  <div class="quiz">
+    <p>3. O que acontece se regar demais?</p>
+    <button onclick="responder(false)">Ela cresce mais rápido</button>
+    <button onclick="responder(true)">Pode apodrecer</button>
+  </div>
+
+  <p id="resultado"></p>
+
+  <button onclick="reiniciarQuiz()">Reiniciar Quiz</button>
+</section>
+
+<footer>
+  <p>🌎 Projeto Agrinho 2026 - Desenvolvido por Otávio</p>
+</footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
